@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+
+ .main-div {
+  margin: 40px;
+ }
+
+ li {
+  list-style: none;
+}
+
+
+ .title {
+  padding-bottom: 30px;
+ }
+
+ .restaurant-name {
+  font-size: larger;
+  font-weight: 600;
+  line-height: 10px;
+ }
+
+ .index-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+
+ .form-new {
+  width: 450px;
+ }

@@ -1,0 +1,20 @@
+<div class="main-div">
+  <div>
+    <h3><%= @restaurant.name %></h3>
+    <h5><%= @restaurant.address %></h5>
+    <h6><%= @restaurant.category.capitalize + " cuisine" %></h6>
+
+  </div>
+<br>
+  <div style="width: 450px;">
+    <h5 style="margin-bottom: 20px;">Reviews</h5>
+      <% @restaurant.reviews.each do |review| %>
+    <li style="margin-bottom: 25px;">
+      <div style="border-bottom: 1px solid rgb(218, 218, 218);">
+        <p style="font-weight: 350;"><%= review.content %></p>
+        <p style="margin-top: 10px;">Rating <%= "⭐" * review.rating %></p>
+      </div>
+    </li>
+    <% end %>
+  </div>
+</div>

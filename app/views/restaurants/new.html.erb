@@ -1,0 +1,13 @@
+
+<div class="main-div">
+  <h1 class="title">New Restaurant</h1>
+  <div class="form-new">
+    <%= simple_form_for(@restaurant) do |f|%>
+      <%= f.input :name %>
+      <%= f.input :address %>
+      <%= f.input :phone_number %>
+      <%= f.input :category %>
+      <%= f.submit %>
+    <% end %>
+  </div>
+</div>
