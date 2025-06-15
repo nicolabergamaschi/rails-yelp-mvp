@@ -22,6 +22,10 @@
   list-style: none;
 }
 
+.no-decoration {
+  text-decoration: none;
+  color: rgb(195, 170, 254); /* Optional: keeps the link color same as parent */
+}
 
  .title {
   padding-bottom: 30px;

@@ -1,12 +1,12 @@
 <div class="main-div">
   <div class="index-top">
     <h1 class="title">Restaurants list</h1>
-    <div class="btn"><%= link_to "+ Add new restaurant", new_restaurant_path %></div>
+    <div><%= link_to "+ Add new restaurant", new_restaurant_path %></div>
   </div>
   <br>
   <% @restaurants.each do |restaurant| %>
     <li>
-      <h4 class="restaurant-name"><%= link_to restaurant.name, "restaurants/#{restaurant.id}" %></h4>
+      <h4 class="restaurant-name"><%= link_to restaurant.name, restaurant_path(restaurant) %></h4>
       <br>
       <%= restaurant.address %>
       <br>
